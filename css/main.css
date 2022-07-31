@@ -1,0 +1,115 @@
+:root {
+   --color-main-code: 32 178 170;
+   --color-main: rgb(var(--color-main-code));
+   --color-main-hover: rgb(24 145 139);
+   --color-main-disabled: rgb(62 158 153);
+   --color-main-focus: rgba(var(--color-main-code) / 0.3)
+}
+
+/* override bootstrap primary color */
+a {
+   color: var(--color-main)
+}
+
+a:hover {
+   color: var(--color-main-hover)
+}
+
+.text-primary {
+   color: var(--color-main) !important;
+}
+
+.btn-primary {
+   background-color: var(--color-main);
+   border-color: var(--color-main);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+   background-color: var(--color-main-hover);
+   border-color: var(--color-main-hover);
+}
+
+/* .btn:focus:not(.btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-warning, .btn-info, .btn-light, .btn-dark), */
+.btn-primary:focus,
+.btn-primary:active:focus {
+   box-shadow: 0 0 0 0.25rem var(--color-main-focus);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+   background-color: var(--color-main-disabled);
+   border-color: var(--color-main-disabled);
+}
+
+.btn-outline-primary {
+   color: var(--color-main);
+   border-color: var(--color-main);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+   background-color: var(--color-main);
+   border-color: var(--color-main);
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:active:focus {
+   color: rgb(255 255 255);
+   box-shadow: 0 0 0 0.25rem var(--color-main-focus);
+}
+
+.bg-primary {
+   background-color: var(--color-main) !important;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-control:focus {
+   border-color: var(--color-main);
+   box-shadow: 0 0 0 0.25rem var(--color-main-focus);
+}
+
+.form-check-input:focus {
+   border-color: var(--color-main);
+   box-shadow: 0 0 0 0.25rem var(--color-main-focus);
+}
+
+.form-check-input:checked {
+   background-color: var(--color-main);
+   border-color: var(--color-main);
+}
+
+.mdc-container-sm {
+   max-width: 576px;
+}
+
+/* custom styles */
+.gap-sm {
+   gap: 0.5rem;
+}
+
+.gap-md {
+   gap: 1rem;
+}
+
+.gap-lg {
+   gap: 2rem;
+}
+
+.logo,
+.logo-icon {
+   color: var(--color-main);
+}
+
+.logo {
+   font-size: 1.2rem;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+.logo-icon {
+   font-size: 2.5rem;
+}
