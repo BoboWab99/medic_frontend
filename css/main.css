@@ -113,3 +113,21 @@ a:hover {
 .logo-icon {
    font-size: 2.5rem;
 }
+
+.circle-lg {
+   --size: 200px;
+   width: var(--size);
+   height: var(--size);
+}
+
+.circle-lg + .circle-lg {
+   margin-left: -4rem;
+}
+
+.circle-lg:first-child {
+   background-color: rgba(var(--color-main-code) / 0.3);
+}
+
+.circle-lg:last-child {
+   background-color: rgba(32, 178, 134, 0.3);
+}
