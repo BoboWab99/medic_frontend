@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>User Details | Medic</title>
+
+   <!-- Bootstrap css -->
+   <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+   <!-- Custom css -->
+   <link rel="stylesheet" href="../css/main.css">
+   
+   <!-- Fontawesome 6 -->
+   <script src="https://kit.fontawesome.com/e307a20384.js" crossorigin="anonymous"></script>
+</head>
+<body data-page="UserDetails">
+
+   <div class="container-md mdc-container-sm">
+      <header  class="mb-3 d-flex gap-md py-5">
+        <div class="flex-grow-1">
+         <i class="fa-solid fa-heart-pulse logo-icon"></i>
+         <div class="logo">Medic</div>
+        </div>
+
+         <div class="card p-1">
+            <a href="./index.html" class="text-decoration-none">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <!---Username-->
+            <p class="form-label">Harry Barry</p>
+         </div>
+         
+
+      </header>
+
+      <div class="mb-3 text-center subtitles">
+        <p>Personal Details</p>
+      </div>
+
+      <form action="#" method="GET" class="mb-5">
+         <div class="mb-3">
+            <label for="inputGender" class="form-label">Gender</label>
+            <select name="gender-type" id="gender-type" class="form-select">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Prefer not to say</option>
+            </select>
+         </div>
+
+         <div class="mb-3">
+            <label for="inputAge" class="form-label">Age</label>
+            <input type="number" class="form-control" name="age" id="age" placeholder="Input patient's age">
+         </div>
+
+         <div class="mb-3">
+            <label for="inputWeight" class="form-label">Weight</label>
+            <input type="number" class="form-control"name="weight" id="weight" placeholder="Input patient's weight">
+         </div>
+
+         <button type="submit" class="btn btn-primary w-100">Save</button>
+      </form>
+
+      <label for="fatPercentage" class="">Body Fat Percentage:</label>
+      <div class="mb-3 card">
+        <!--Body Fat Percentage-->
+        <p class="card-body">100</p>
+      </div>
+
+      <footer class="text-center">
+         <p class="mb-3">
+            <a href="./chat.html" class="h6 text-capitalize text-decoration-none">Chat with her</a>
+            <i class="fa-solid fa-arrow-right"></i>
+         </p>
+      </footer>
+   </div>
+   
+</body>
+</html>
